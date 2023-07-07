@@ -15,19 +15,42 @@
 
       <div class="navigation">
          <ul>
-            <li>Home</li>
-            <li>Search</li>
-            <li>Create Playlist</li>
+            <li onclick="alert('Home')">Home</li>
+            <li onclick="alert('Search song')">Search</li>
+            <li onclick="alert('Create playlist')">Create Playlist</li>
          </ul>
       </div>
    </div>
 
    <div class="main-container">
 
-      <div class="playlists">
+      <div class="playlists"> <!-- most played -->
+         <h2>Spotify Most Played</h2>
+
+         <div class="list">
+            <div class="item">
+               <img src="https://cdns-images.dzcdn.net/images/cover/902dc007a189d45a9c82e212a1f87f0e/264x264.jpg" />
+               <h4>Song 1</h4>
+            </div>
+            <div class="item">
+               <img src="https://cdns-images.dzcdn.net/images/cover/902dc007a189d45a9c82e212a1f87f0e/264x264.jpg" />
+               <h4>Playlist 5</h4>
+            </div>
+            <div class="item">
+               <img src="https://cdns-images.dzcdn.net/images/cover/902dc007a189d45a9c82e212a1f87f0e/264x264.jpg" />
+               <h4>Song 2</h4>
+            </div>
+         </div>
+      </div> <!-- most played -->
+
+      <div class="playlists"> <!-- playlist -->
          <h2>Spotify Playlists</h2>
 
          <div class="list">
+            <div class="item-add" onclick="alert('Adding to playlist')">
+               <img src="https://icon-library.com/images/add-to-playlist-icon/add-to-playlist-icon-12.jpg" />
+               <h4>Add to Playlist</h4>
+            </div>
             <div class="item">
                <img src="https://cdns-images.dzcdn.net/images/cover/902dc007a189d45a9c82e212a1f87f0e/264x264.jpg" />
                <h4>Playlist 1</h4>
@@ -59,7 +82,7 @@
          </div>
       </div> <!-- playlist -->
 
-      <div class="playlists">
+      <div class="playlists"> <!-- songlist -->
          <h2>Spotify Songlists</h2>
 
          <div class="list">

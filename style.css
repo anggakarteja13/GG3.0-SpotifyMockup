@@ -50,7 +50,7 @@ body {
 .playlists .list {
    display: flex;
    gap: 20px;
-   overflow: visible;
+   overflow: hidden;
 }
 .playlists .list .item {
    width: 160px;
@@ -58,20 +58,23 @@ body {
    background-color: black;
    border-radius: 6px;
 }
-.playlists .list .item:hover {
-   background-color: #252525;
+.playlists .list .item-add {
+   width: 160px;
+   padding: 15px;
+   background-color: rgb(220, 202, 202) !important;
+   border-radius: 6px;
 }
+.playlists .list .item-add:hover,
+.playlists .list .item:hover {
+   background-color: #938e8e !important;
+}
+.playlists .list .item-add img,
 .playlists .list .item img {
    width: 145px;
    border-radius: 6px;
    margin-bottom: 10px;
 }
+.playlists .list .item-add,
 .playlists .list .item h4 {
    color: white;
 }
-
-/* @media (max-width: 800px) {
-   .flex-item-right, .flex-item-left {
-      flex: 100%;
-   }
-} */
